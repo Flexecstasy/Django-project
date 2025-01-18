@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'vacancy_python.urls'
+ROOT_URLCONF = 'django_vacancies_statistics.urls'
 
 TEMPLATES = [
     {
