@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vacancy_python.wsgi.application'
+WSGI_APPLICATION = 'django_vacancies_statistics.wsgi.application'
 
 
 # Database
