@@ -28,10 +28,12 @@
             </nav>
         </div>
         <div class="home_text">
-            <h1>Последние вакансии</h1>
+            {% for data in last_vacancies %}
+            <h1>{{ data.title }}</h1>
             <div class="empty_skills"></div>
+        {% endfor %}
         </div>
-        <div class="LVtable">
+        <div class="LVtable" style="margin-left: 150px;">
             {% for i in vacs %}
             <h3>{{ i.name }}</h3>
             <p>Описание: {{ i.description }}</p>
