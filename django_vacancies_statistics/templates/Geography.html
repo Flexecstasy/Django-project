@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+</head>
+<body>
+<header>
+    <div class="name">
+        <img src="{% static 'images/logotip.png' %}" class="logo"/>
+    </div>
+</header>
+<main>
+    <div class="body">
+        <div class="navigation" style="height: 1500px;">
+            <nav>
+                <ul>
+                    <li><div><a href="/">Главная</a></div></li>
+                    <li><div><a href={% url 'all' %}>Общая статистика</a></div></li>
+                    <li><div><a href={% url 'demend' %}>Востребованность</a></div></li>
+                    <li><div style="background-color: #FAB162;"><a style="color: #FFFFFF !important;" href={% url 'geography' %}>География</a></div></li>
+                    <li><div><a href={% url 'skills' %}>Навыки</a></div></li>
+                    <li><div><a href={% url 'lastVacancy' %}>Последние вакансии</a></div></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="home_text" style="top: 200px">
+            <img class="geography_graph_1" src="{% static 'images/4.png' %}"/>
+            <img class="geography_graph_2" src="{% static 'images/3.png' %}"/>
+            <div class="tables">
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right;">
+                    <th></th>
+                    <th>Уровень зарплат</th>
+                  </tr>
+                  <tr>
+                    <th>Город</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Москва</th>
+                    <td>110235</td>
+                  </tr>
+                  <tr>
+                    <th>Минск</th>
+                    <td>102546</td>
+                  </tr>
+                  <tr>
+                    <th>Санкт-Петербург</th>
+                    <td>91915</td>
+                  </tr>
+                  <tr>
+                    <th>Новосибирск</th>
+                    <td>85362</td>
+                  </tr>
+                  <tr>
+                    <th>Екатеринбург</th>
+                    <td>81455</td>
+                  </tr>
+                  <tr>
+                    <th>Казань</th>
+                    <td>72868</td>
+                  </tr>
+                  <tr>
+                    <th>Нижний Новгород</th>
+                    <td>69073</td>
+                  </tr>
+                  <tr>
+                    <th>Самара</th>
+                    <td>67633</td>
+                  </tr>
+                  <tr>
+                    <th>Краснодар</th>
+                    <td>67197</td>
+                  </tr>
+                  <tr>
+                    <th>Алматы</th>
+                    <td>65689</td>
+                  </tr>
+                  <tr>
+                    <th>Челябинск</th>
+                    <td>64299</td>
+                  </tr>
+                  <tr>
+                    <th>Уфа</th>
+                    <td>62750</td>
+                  </tr>
+                  <tr>
+                    <th>Красноярск</th>
+                    <td>60552</td>
+                  </tr>
+                  <tr>
+                    <th>Пермь</th>
+                    <td>60204</td>
+                  </tr>
+                  <tr>
+                    <th>Воронеж</th>
+                    <td>59963</td>
+                  </tr>
+                  <tr>
+                    <th>Ростов-на-Дону</th>
+                    <td>59061</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right;">
+                    <th></th>
+                    <th>Доля вакансий</th>
+                  </tr>
+                  <tr>
+                    <th>Город</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Москва</th>
+                    <td>0.2851</td>
+                  </tr>
+                  <tr>
+                    <th>Санкт-Петербург</th>
+                    <td>0.1040</td>
+                  </tr>
+                  <tr>
+                    <th>Новосибирск</th>
+                    <td>0.0248</td>
+                  </tr>
+                  <tr>
+                    <th>Казань</th>
+                    <td>0.0221</td>
+                  </tr>
+                  <tr>
+                    <th>Екатеринбург</th>
+                    <td>0.0219</td>
+                  </tr>
+                  <tr>
+                    <th>Алматы</th>
+                    <td>0.0211</td>
+                  </tr>
+                  <tr>
+                    <th>Нижний Новгород</th>
+                    <td>0.0202</td>
+                  </tr>
+                  <tr>
+                    <th>Минск</th>
+                    <td>0.0199</td>
+                  </tr>
+                  <tr>
+                    <th>Краснодар</th>
+                    <td>0.0185</td>
+                  </tr>
+                  <tr>
+                    <th>Ростов-на-Дону</th>
+                    <td>0.0180</td>
+                  </tr>
+                  <tr>
+                    <th>Самара</th>
+                    <td>0.0133</td>
+                  </tr>
+                  <tr>
+                    <th>Воронеж</th>
+                    <td>0.0129</td>
+                  </tr>
+                  <tr>
+                    <th>Красноярск</th>
+                    <td>0.0117</td>
+                  </tr>
+                  <tr>
+                    <th>Уфа</th>
+                    <td>0.0113</td>
+                  </tr>
+                  <tr>
+                    <th>Пермь</th>
+                    <td>0.0108</td>
+                  </tr>
+                  <tr>
+                    <th>Челябинск</th>
+                    <td>0.0103</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="graph_title1">Уровень зарплат по городам</h4>
+        </div>
+    </div>
+</main>
+<footer>
+  <p>Лысенков Семен АТ-08</p>
+</footer>
+</body>
+</html>
