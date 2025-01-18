@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #191919;
+}
+
+header {
+    position: absolute;
+    width: calc(100% - 325px);
+    left: 325px;
+    height: 150px;
+    z-index: 99999999999999999;
+    background: #191919;
+    border-right: 2px solid #FAB162;
+    border-bottom: 2px solid #FAB162;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-wrap: normal;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 10000000000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background: #191919;
+    border-top: 1px solid #FAB162
+}
+
+footer p {
+    color: #F1B814;
+    margin: 8px;
+    font-family: "Montserrat-Light";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+
+a {
+    color: #F64C72 !important;
+    text-decoration: none
+}
+
+
+.logo {
+    width: 609px;
+    margin-top: 1%;
+}
+
+.logo_nav {
+    position:absolute;
+    top: 1%;
+    left: 25%;
+    width: 150px;
+}
+
+.name {
+    align-self: center;
+    width: 100%;
+    height: 100px;
+    left: 550px;
+    top: 35px;
+
+    font-family: 'Montserrat-Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+    justify-content: center;
+
+    color: #17203D;
+
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 325px;
+    height: 100%;
+    left: 0px;
+    top: 150px;
+    z-index: 9999999999999999;
+    border-right: 2px solid #FAB162;
+    border-bottom: 2px solid #FAB162;
+}
+
+.nav_text {
+    font-family: "Montserrat-Light";
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    color: #A8E4A0;
+
+}
+
+.nav_text_foot {
+    font-family: "Montserrat-Light";
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #A8E4A0;
+}
+
+.navigation ul {
+    text-align: left;
+    list-style: none;
+    padding-top: 5%;
+    align-self: center;
+}
+
+.navigation li {
+    margin: 10px -30px;
+    font-family: "Montserrat-Light";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navigation li div{
+    width: 310px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li div:hover{
+    background-color: #FAB162;
+}
+
+.navigation li a {
+    color: #fff !important; /*ЦВЕТ ТЕКСТА МЕНЮ*/
+    margin-left: 3%;
+}
+
+.navigation li div a:hover {
+
+}
+
+
+.foot{
+    position: absolute;
+    font-family: 'Montserrat-Light';
+    font-size: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    bottom: 10px;
+    left: 300px;
+}
+
+.home_text {
+    position: absolute;
+    left: 335px;
+    top: 140px;
+}
+
+.home_text p {
+    font-size: 15px;
+    font-family: 'Montserrat-Light';
+    color: #FFFFFF;
+    text-wrap: normal;
+}
+
+.home_text h3 {
+    text-align: center;
+    font-family: 'Montserrat-Light';
+    color: #FFFFFF;
+}
+
+.home_text li {
+    font-family: 'Montserrat-Light';
+    color: #FFFFFF;
+}
+
+.home_text h1 {
+    font-family: 'Montserrat-Light';
+    width: 600px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 400px;
+    top: -15px
+}
+
+.home_img {
+    position:absolute;
+    width: 350px;
+    right: 1%;
+    top: 600px;
+}
+
+ .empty {
+     height: 40px;
+ }
+
+.demand_graph_1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.demand_graph_2 {
+    width: 400px;
+    height: 300px;
+    left: 20px;
+    position: absolute;
+    top: 300px
+}
+
+.tables {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+    position: absolute;
+    left: 500px;
+    top: 50px
+}
+
+.tables table {
+    color: #FFFFFF;
+}
+
+.geography_graph_1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.geography_graph_2 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+
+.graph_title1 {
+    font-family: "Montserrat-Light";
+    position: absolute;
+    z-index: 999999;
+    color: #FFFFFF;
+    top: -45px;
+    left: 120px;
+    width: 300px;
+}
+
+.graph_title2 {
+    font-family: "Montserrat-Light";
+    position: absolute;
+    z-index: 999999;
+    color: black;
+    left: 120px;
+    top: 290px;
+    width: 300px;
+}
+
+.tables_skills {
+    display: flex;
+
+    flex-direction: row;
+
+    position: absolute;
+    left: 50px;
+    top: 50px;
+
+}
+
+.tables_skills table {
+    color: #FFFFFF;
+}
+
+.skills_graph {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 400px;
+    top: 380px
+}
+
+.empty_skills {
+    height: 750px;
+}
+
+.last_text {
+    font-family: 'Montserrat-Light';
+    width: 600px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 100px;
+    top: -15px
+}
+
+.LVtable {
+    left: 300px;
+    top: 200px;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.LVtable p {
+    color: #FFFFFF;
+}
+
+.navigate_page {
+    color: #FFFFFF;
+}
+
+
+.all_graph_1 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50px;
+    top: 50px
+}
+.all_graph_2 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50px;
+    top: 350px
+}
+
+.all_graph_3 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 775px;
+    top: 50px
+}
+
+.all_graph_4 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 775px;
+    top: 350px
+}
+
+.all_graph_5 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50px;
+    top: 700px
+}
+
+.tables_2 {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+    position: absolute;
+    left: 1200px;
+    top: 50px
+}
+
+.tables_2 table {
+    color: #FFFFFF;
+}
+
+.tables_skills_2 {
+    display: flex;
+
+    flex-direction: row;
+
+    position: absolute;
+    left: 50px;
+    top: 1050px;
+
+}
+
+.tables_skills_2 table {
+    color: #FFFFFF;
+}
